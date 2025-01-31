@@ -12,3 +12,4 @@ Dans le cadre du cour 420-412-MV PROJET - DÉVELOPPEMENT D'UNE APPLICATION WEB n
 - router-react-dom: npm -i react-router-dom
 - axios: npm - i axios
 - material ui: npm install @mui/material @emotion/react @emotion/styled
+- i18n: 
