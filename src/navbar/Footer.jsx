@@ -2,7 +2,7 @@
 function Footer(){
 
     return (
-        <div>
+        <div style={{display:"flex", alignItems:"center"}}>
             <p>Footer</p>
         </div>
     )

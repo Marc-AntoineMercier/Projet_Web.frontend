@@ -1,5 +1,5 @@
-import NavBar from "../navbar/NavBar"
-import Footer from "../navbar/Footer"
+import NavBar from "../../navbar/NavBar"
+import Footer from "../../navbar/Footer"
 
 function Home(){
 

@@ -1,10 +1,10 @@
-
+import { Link } from "react-router-dom"
 
 function About(){
     
     return (
         <div>
-            About
+            <Link to={"/"}>About</Link>
         </div>
     )
 }
