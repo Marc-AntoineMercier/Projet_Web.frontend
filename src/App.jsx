@@ -1,28 +1,42 @@
 import "./App.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import { ColorModeContext, useMode } from "./theme/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import TopBar from "./navbar/TopBar";
-import SideBar from "./navbar/SideBar"
+import DashBoard from "./component/Dashboard";
+import Home from "./page/Home"
 
-export default function App() {
+const routes = [
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/about",
+    element: <DashBoard element={<p>About</p>}/>
+  },
+  {
+    path: "/dashboard",
+    element: <DashBoard element={<p>Article</p>}/>
+  },
+  {
+    path: "*",
+    element: <DashBoard element={<p>Not Found</p>}/>
+  }
+
+];
+
+const router = createBrowserRouter(routes);
+
+function App() {
   const [theme, colorMode] = useMode();
   return (
-    <BrowserRouter>
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="app">
-          <SideBar />
-          <div className="content">
-            <TopBar/>
-            <Routes>
-              
-            </Routes>
-          </div>
-        </div>
+        <RouterProvider  router={router}/>
       </ThemeProvider>
     </ColorModeContext.Provider>
-    </BrowserRouter>
   )
 }
+
+export default App
