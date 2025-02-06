@@ -4,6 +4,10 @@ import { ColorModeContext, useMode } from "./theme/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import DashBoard from "./component/Dashboard";
 import Home from "./page/Home"
+import About from "./page/About"
+import NotFound from "./page/NotFound"
+import Login from "./page/Login"
+import Register from "./page/Register"
 
 const routes = [
   {
@@ -12,15 +16,23 @@ const routes = [
   },
   {
     path: "/about",
-    element: <DashBoard element={<p>About</p>}/>
+    element: <About />
+  },
+  {
+    path:"/login",
+    element: <Login />
+  },
+  {
+    path:"/register",
+    element: <Register />
   },
   {
     path: "/dashboard",
-    element: <DashBoard element={<p>Article</p>}/>
+    element: <DashBoard element={<p>Base</p>}/>
   },
   {
     path: "*",
-    element: <DashBoard element={<p>Not Found</p>}/>
+    element: <NotFound />
   }
 
 ];
