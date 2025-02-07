@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom"
-
 function About(){
     
     return (
         <div>
-            <Link to={"/"}>About</Link>
+            About contenue
         </div>
     )
 }
