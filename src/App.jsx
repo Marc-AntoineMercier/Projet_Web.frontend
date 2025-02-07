@@ -14,6 +14,8 @@ import Calendar from "./page/dashboard/Calendar";
 import Budget from "./page/dashboard/Budget";
 import Download from "./page/home/Download";
 import UserSetting from "./page/dashboard/UserSetting"
+import Forgot from "./page/home/Forgot";
+
 
 const routes = [
   {
@@ -35,6 +37,10 @@ const routes = [
   {
     path:"/register",
     element: <Register />
+  },
+  {
+    path:"/forgot",
+    element: <Forgot />
   },
   {
     path: "/dashboard",
