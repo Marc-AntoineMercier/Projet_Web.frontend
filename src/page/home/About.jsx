@@ -1,9 +1,11 @@
+import { Box, Typography } from "@mui/material"
+
 function About(){
     
     return (
-        <div>
-            About contenue
-        </div>
+        <Box>
+            <Typography>Page pour avoir des infos sur les condition d'utilisation et qui a developper l'application</Typography>
+        </Box>
     )
 }
 

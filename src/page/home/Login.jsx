@@ -18,9 +18,8 @@ function Login() {
                 </Avatar>
                 <Typography component={"h1"} variant="h5" sx={{textAlign:"center"}}>Connexion</Typography>
                 <Box component={"form"} onSubmit={handleSubmit} noValidate sx={{mt:1}}>
-                    <TextField placeholder="Entrer votre nom d'utilisateur" fullWidth required autoFocus sx={{mb:2}} />
+                    <TextField placeholder="Entrer votre nom d'utilisateur" fullWidth required autoFocus sx={{mb:2}}/>
                     <TextField placeholder="Entrer votre mot de passe" fullWidth required type="password" />
-                    <FormControlLabel control={<CheckBox value="remember" color="primary"/>} label="Sauvegarder" />
                     <Button type="submit" variant="contained" fullWidth sx={{mt: 1}}>Connexion</Button>
                 </Box>
                 <Grid2 container justifyContent={"space-between"} sx={{mt:1}}>

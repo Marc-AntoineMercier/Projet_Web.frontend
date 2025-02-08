@@ -3,6 +3,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import { ColorModeContext, useMode } from "./theme/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import DashBoard from "./component/Dashboard";
+import Landing from "./component/Landing";
 import Home from "./page/home/Home"
 import About from "./page/home/About"
 import NotFound from "./page/error/NotFound"
@@ -12,10 +13,9 @@ import QuickPage from "./page/dashboard/QuickPage";
 import Expence from "./page/dashboard/Expense";
 import Calendar from "./page/dashboard/Calendar";
 import Budget from "./page/dashboard/Budget";
-import Download from "./page/home/Download";
 import UserSetting from "./page/dashboard/UserSetting"
 import Forgot from "./page/home/Forgot";
-import Landing from "./component/Landing";
+
 
 
 const routes = [
@@ -26,10 +26,6 @@ const routes = [
   {
     path: "/about",
     element: <Landing element={<About />} />
-  },
-  {
-    path: "/download",
-    element: <Landing element={<Download />} />
   },
   {
     path:"/login",

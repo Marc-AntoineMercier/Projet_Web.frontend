@@ -1,7 +1,7 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
 /*
- * createConext = pour eviter d'utiliser des props dans tout les conposantes du projet et a la place pouvoir les exporters
+ * createContext = pour eviter d'utiliser des props dans tout les conposantes du projet et a la place pouvoir les exporters
  * useMemo = pour eviter les calcules inutiles et jsute la changers quand t-on change la valeur
  * createTheme = permet de creer des themes personnaliser pour l'applications
  * 

@@ -8,11 +8,18 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom"
 
 export default function TopBar(){
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     const colorMode = useContext(ColorModeContext);
+    const navigate = useNavigate("")
+
+    const handleChangePage = () => {
+        navigate("/user-setting")
+    }
+
 
 
     return (
@@ -45,7 +52,7 @@ export default function TopBar(){
                     <NotificationsOutlinedIcon />
                 </IconButton>
                 
-                <IconButton>
+                <IconButton onClick={handleChangePage}>
                     <SettingsOutlinedIcon />
                 </IconButton>
                 
