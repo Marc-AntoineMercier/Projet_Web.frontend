@@ -4,7 +4,7 @@ function Download(){
 
     return (
         <div>
-            <Link to={"/"}>Download</Link>
+            Download
         </div>
     )
 }
