@@ -14,9 +14,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = [
     {
-        name:"Download",
-        path:"/download"
-    }, 
+        name:"Home", 
+        path:"/"
+    },
     {
         name:"About", 
         path:"/about"
@@ -39,7 +39,7 @@ function NavBar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Link to={"/"}>
-                        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                        
                         <Typography
                             variant="h6"
                             noWrap
@@ -54,7 +54,7 @@ function NavBar() {
                                 textDecoration: 'none',
                             }}
                         >
-                            TrackyB
+                            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />TrackyB
                         </Typography>
                     </Link>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

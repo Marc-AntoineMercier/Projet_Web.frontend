@@ -23,7 +23,7 @@ function Register() {
                 </Box>
                 <Grid2 container justifyContent={"space-between"} sx={{mt:1}}>
                     <Grid2 item>
-                        <Link to={"/register"}>Connexion</Link>
+                        <Link to={"/login"}>Connexion</Link>
                     </Grid2>
                 </Grid2>
             </Paper>
