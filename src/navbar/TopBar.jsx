@@ -16,8 +16,12 @@ export default function TopBar(){
     const colorMode = useContext(ColorModeContext);
     const navigate = useNavigate("")
 
-    const handleChangePage = () => {
+    const changeUserPage = () => {
         navigate("/user-setting")
+    }
+
+    const logout = () => {
+        navigate("/")
     }
 
 
@@ -52,11 +56,11 @@ export default function TopBar(){
                     <NotificationsOutlinedIcon />
                 </IconButton>
                 
-                <IconButton onClick={handleChangePage}>
+                <IconButton onClick={changeUserPage}>
                     <SettingsOutlinedIcon />
                 </IconButton>
                 
-                <IconButton>
+                <IconButton onClick={logout}>
                     <PersonOutlinedIcon />
                 </IconButton>
             </Box>
