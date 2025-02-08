@@ -14,19 +14,22 @@ import Calendar from "./page/dashboard/Calendar";
 import Budget from "./page/dashboard/Budget";
 import Download from "./page/home/Download";
 import UserSetting from "./page/dashboard/UserSetting"
+import Forgot from "./page/home/Forgot";
+import Landing from "./component/Landing";
+
 
 const routes = [
   {
     path: "/",
-    element: <Home />
+    element: <Landing element={<Home />} />
   },
   {
     path: "/about",
-    element: <About />
+    element: <Landing element={<About />} />
   },
   {
     path: "/download",
-    element: <Download />
+    element: <Landing element={<Download />} />
   },
   {
     path:"/login",
@@ -35,6 +38,10 @@ const routes = [
   {
     path:"/register",
     element: <Register />
+  },
+  {
+    path:"/forgot",
+    element: <Forgot />
   },
   {
     path: "/dashboard",
