@@ -1,5 +1,5 @@
 import "./App.css"
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import { ColorModeContext, useMode } from "./theme/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import DashBoard from "./component/Dashboard";

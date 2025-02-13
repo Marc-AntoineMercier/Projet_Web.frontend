@@ -1,9 +1,9 @@
 import { useNavigate, Link } from "react-router-dom"
-import { Container, Paper, Avatar, Typography, Box, TextField, FormControlLabel, Button, Grid2 } from "@mui/material";
+import { Container, Paper, Avatar, Typography, Box, TextField, Button, Grid2 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { CheckBox } from "@mui/icons-material";
 
-function Login() {
+function Login() 
+{
     const navigate = useNavigate("")
     const handleSubmit = (e) => {
         e.preventDefault();
